@@ -61,6 +61,7 @@ export const createBundle = (cellId: string, input: string) => {
     });
 
     const result = await bundle(input);
+    console.log(result);
 
     dispatch({
       type: ActionType.BUNDLE_COMPLETE,
